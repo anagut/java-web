@@ -1,0 +1,10 @@
+package com.ana.database;
+
+import java.util.ArrayList;
+
+public class BBDDCanciones {
+
+	public ArrayList<Cancion> canciones = new ArrayList<Cancion>();
+	
+	
+}

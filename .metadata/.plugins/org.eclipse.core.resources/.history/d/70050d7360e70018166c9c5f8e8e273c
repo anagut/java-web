@@ -1,0 +1,19 @@
+package com.ana.database;
+
+import java.util.ArrayList;
+
+import com.ana.models.Cancion;
+
+public class BBDDCanciones {
+
+	public ArrayList<Cancion> canciones = new ArrayList<Cancion>();
+	
+	public BBDDCanciones() {
+		this.fillCanciones();
+	}
+	
+	private boolean fillCanciones{
+		canciones.add(new Cancion(1, "Volaré", "Juanito", null));
+		canciones.add(new Cancion(1, "Volaré", "Juanito", null));
+	}
+}

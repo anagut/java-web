@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	Esta es la página inicial.
+	<a href="./pagina1.html">Página 1</a>
+	<a href="./pagina2">Página 2</a>
+</body>
+</html>

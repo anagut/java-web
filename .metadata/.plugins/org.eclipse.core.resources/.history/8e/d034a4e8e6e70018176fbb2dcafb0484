@@ -1,0 +1,18 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Canción</h1>
+	<ul>
+		<li>Id: ${laCancion.id}</li>
+		<li>Título: ${laCancion.titulo}</li>
+		<li>Autor: ${laCancion.autor}</li>
+		<li>Duración: ${laCancion.duracion}</li>
+	</ul>
+</body>
+</html>

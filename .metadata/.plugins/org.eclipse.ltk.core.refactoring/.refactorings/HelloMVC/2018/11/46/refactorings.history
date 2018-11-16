@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.ana.controllers.Usuario.java&apos; to &apos;UsuarioServlet.java&apos;&#x0D;&#x0A;- Original project: &apos;HelloMVC&apos;&#x0D;&#x0A;- Original element: &apos;com.ana.controllers.Usuario.java&apos;&#x0D;&#x0A;- Renamed element: &apos;com.ana.controllers.UsuarioServlet.java&apos;" description="Rename compilation unit &apos;Usuario.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;com.ana.controllers{Usuario.java" name="UsuarioServlet.java" references="false" stamp="1542024101319" version="1.0"/>
+</session>

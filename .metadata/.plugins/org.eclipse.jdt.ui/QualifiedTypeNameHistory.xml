@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.ana.controllers.Usuario"/>
+<fullyQualifiedTypeName name="org.apache.jasper.tagplugins.jstl.core.ForEach"/>
+<fullyQualifiedTypeName name="com.ana.models.Cancion"/>
+<fullyQualifiedTypeName name="com.ana.database.BBDDCanciones"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+<fullyQualifiedTypeName name="com.ana.models.Usuario"/>
+<fullyQualifiedTypeName name="com.ana.database.BBDD"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.ana.models.Habitacion"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,19 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Habitacion</title>
+</head>
+<body>
+	<h1>Datos de la habitación</h1>
+	<ul>
+	<li>Id: ${requestScope.laHabitacion.hid} </li>
+	<li>Calle: ${requestScope.laHabitacion.calle} </li>
+	<li>Número: ${requestScope.laHabitacion.num}</li>
+	<li>Ciudad: ${requestScope.laHabitacion.ciudad} </li>
+	<li><a href="./usuario">Casa de pepe</a></li>
+	</ul>
+</body>
+</html>

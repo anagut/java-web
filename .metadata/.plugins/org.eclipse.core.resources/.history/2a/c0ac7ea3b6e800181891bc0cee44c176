@@ -1,0 +1,31 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Nuevo Usuario</title>
+</head>
+<body>
+	<h1>Nuevo Usuario</h1>
+	<div class="errorpassword">${errorpassword}</div>
+	<form action="" method="POST">
+	<div>
+	<input type="text" placeholder="Nombre" name="nombre" id="nombre" required/>
+	</div>
+	<div>
+	<input type="email" placeholder="email" name="email" id="email" required/>
+	</div>
+	<div>
+	<input type="password" placeholder="password" name="password" id="password" required/>
+	</div>
+	<div>
+	<input type="password" placeholder="confirmación de password" name="passwordconfirmado" id="passwordconfirmado" required/>
+	</div>
+	
+	<div><button>Aceptar</button></div>
+	</form>
+	
+	
+</body>
+</html>

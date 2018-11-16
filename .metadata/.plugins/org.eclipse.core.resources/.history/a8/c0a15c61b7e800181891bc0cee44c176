@@ -1,0 +1,56 @@
+package com.ana.controllers;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class NuevosUsuariosServlet
+ */
+@WebServlet("/nuevousuario")
+public class NuevoUsuarioServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public NuevoUsuarioServlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+		request.getRequestDispatcher("./nuevousuario.jsp").forward(request, response);
+		
+	}
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(request, response);
+		
+		String nombrerecibido = request.getParameter("nombre");
+		String emailrecibido = request.getParameter("email");
+		String passwordrecibido = request.getParameter("password");
+		String passwordconfrecibido = request.getParameter("passwordconf");
+		
+		System.out.println("Nombre:"+nombrerecibido);
+		System.out.println("Email:"+emailrecibido);
+		System.out.println("Password:"+passwordrecibido);
+		System.out.println("Password:"+passwordconfrecibido);
+		
+//		if (passwordrecibido == passwordconfrecibido) {
+//
+//		}else {
+//			request.setAttribute("errorpassword", "Las contraseñas introducidas no coinciden");
+//			this.doGet(request, response);
+//		}
+		
+	}
+
+}

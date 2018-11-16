@@ -1,0 +1,14 @@
+INDEX VERSION 1.4+C:\Ana\java-web\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+310079017.index
+497107027.index
+3060655025.index
+2200683116.index
+3373767121.index
+2384329297.index
+719833859.index
+3252001549.index
+2216357454.index
+1200286978.index
+3287091533.index
+2894059657.index
+1784568453.index

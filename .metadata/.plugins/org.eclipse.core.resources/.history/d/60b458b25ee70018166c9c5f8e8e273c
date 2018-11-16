@@ -1,0 +1,8 @@
+package com.ana.models;
+
+public class Cancion {
+	private int id;
+	private String titulo;
+	private String autor;
+	private String mp3;
+}

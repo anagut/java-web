@@ -1,0 +1,60 @@
+package com.ana.database;
+
+import java.util.ArrayList;
+
+import com.ana.models.Habitacion;
+import com.ana.models.Usuario;
+
+public class BBDD {
+	
+	public ArrayList<Usuario> usuarios = new ArrayList<Usuario>();
+	
+	public ArrayList<Habitacion> habitaciones = new ArrayList<Habitacion>();
+	
+	public BBDD() {
+		this.fillUsuarios();
+		this.fillHabitaciones();
+		this.relacionarUserHab();
+	}
+	
+	private boolean fillUsuarios() {
+		usuarios.add(new Usuario (1, "Pepe", "p@p.es", null));
+		usuarios.add(new Usuario (2, "Luisa", "l@l.es", null));
+		usuarios.add(new Usuario (3, "Mordor", "m@m.es", null));
+		
+		return true;
+	}
+	
+	
+	
+	private boolean fillHabitaciones() {
+		habitaciones.add(new Habitacion (101, "Calle Marqués", 23, "Madrid"));
+		habitaciones.add(new Habitacion (102, "Calle Pantomima", 57, "Albacete"));
+		habitaciones.add(new Habitacion (103, "Calle Pijo", 12, "Murcia"));
+		
+		return true;
+	}
+	
+	private boolean relacionarUserHab() {
+		usuarios.get(0).setHabitacion(habitaciones.get(2));
+		usuarios.get(1).setHabitacion(habitaciones.get(1));
+		usuarios.get(2).setHabitacion(habitaciones.get(0));
+		
+		return true;
+	}
+	
+	
+	//Método que en función de la id me devuelve un objeto usuario concreto
+	
+	public Usuario getUsuarioById(int id) {
+		Usuario usuarioADevolver = null;
+		
+		for (Usuario unUsuario: usuarios) {
+			if(unUsuario.getId()==id) {
+				usuarioADevolver = unUsuario;
+				break;	
+			}
+		}
+		return usuarioADevolver;
+	}
+}

@@ -1,0 +1,26 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> 
+
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Lista de canciones</h1>
+	<ul>
+		<li>
+		<c:forEach var="unaCancion" items="${lasCanciones}">  
+		<li>
+			<div>(${unaCancion.id})</div>
+			<div>${unaCancion.titulo}</div>
+			<div>${unaCancion.titulo}</div>
+		</li>
+   		</c:forEach>
+		</li>
+	</ul>
+	${lasCanciones}
+</body>
+</html>

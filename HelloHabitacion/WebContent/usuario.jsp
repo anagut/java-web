@@ -1,0 +1,22 @@
+<%@page import="com.ana.models.Usuario"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
+  
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Datos de usuario</h1>
+	<ul>
+	<li>Id: ${requestScope.elUsuario.id} </li>
+	<li>Nombre: ${requestScope.elUsuario.name} </li>
+	<li>Email: ${requestScope.elUsuario.email}</li>
+	<li>Habitación: <a href="./habitacion"> ${requestScope.elUsuario.hid}</a></li>
+	</ul>
+
+</body>
+</html>

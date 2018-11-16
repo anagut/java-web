@@ -1,0 +1,19 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Datos de la habitación</h1>
+	<ul>
+	<li>Id: ${resquestScope.laCasa.hid} </li>
+	<li>Nombre: ${resquestScope.laCasa.calle} </li>
+	<li>Email: ${resquestScope.laCasa.num} </li>
+	<li>Email: ${resquestScope.laCasa.ciudad} </li>
+	<li><a href="./usuario.jsp">Casa de pepe</a></li>
+	</ul>
+</body>
+</html>
