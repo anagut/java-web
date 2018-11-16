@@ -1,0 +1,10 @@
+console.log("hola")
+
+document.getElementById("volverBtn").onclick = function(){
+	window.history.back();
+}
+
+document.getElementById("habBtn").onclick = function(e) {
+	e.preventDefault();
+	window.location.href("nuevahabitacion");
+}

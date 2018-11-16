@@ -72,6 +72,8 @@ public class Usuario {
 		
 		if (!this.password.equals(confpassword)) esValidx= false;
 		
+		if(this.habitacion==null) esValidx= false;
+		
 		return esValidx;
 	}
 

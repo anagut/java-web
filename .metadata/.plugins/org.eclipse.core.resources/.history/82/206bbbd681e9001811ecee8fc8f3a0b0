@@ -1,0 +1,31 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Nueva habitación</title>
+<link rel="stylesheet" href="./css/style.css"></link>
+</head>
+
+<body>
+	<h1>Nueva habitación</h1>
+	<form action="" method="POST">
+	<div>
+	<input type="text" placeholder="calle" name="calle" id="calle" value="${newhabitacion.calle}" required/>
+	</div>
+	<div>
+	<input type="number" placeholder="numero" name="numbero" id="numero" value="${newhabitacion.num}"/>
+	</div>
+	<div>
+	<input type="text" placeholder="ciudad" name="ciudad" id="ciudad" value="${newhabitacion.ciudad}" required/>
+	</div>
+	
+	<button>Añadir</button>
+	
+	</form>
+</body>
+
+<script src="./js/script.js"></script>
+
+</html>

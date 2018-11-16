@@ -47,6 +47,15 @@ public class NuevoUsuarioServlet extends HttpServlet {
 		String passwordrecibido = request.getParameter("password");
 		String passwordconfrecibido = request.getParameter("passwordconf");
 		String habitacionrecibida = request.getParameter("habitacion");
+			
+		int habitrecibidaId = 0;
+		
+		try {
+			habitrecibidaId = Integer.parseInt(habitacionrecibida);
+		}catch (Exception e) {
+			System.out.println("Excpeción: "+e.getMessage());
+		}
+		
 		
 		System.out.println("Nombre:"+nombrerecibido);
 		System.out.println("Email:"+emailrecibido);
@@ -62,7 +71,7 @@ public class NuevoUsuarioServlet extends HttpServlet {
 //			this.doGet(request, response);
 //		}
 		
-		Usuario nuevoUser = new Usuario(0, nombrerecibido, emailrecibido, passwordrecibido, null);
+		Usuario nuevoUser = new Usuario(0, nombrerecibido, emailrecibido, passwordrecibido, BBDD.getInstance().getHabitacionById(habitrecibidaId));
 		
 		if (nuevoUser.esValido(passwordconfrecibido)) {
 			//continuar e introducir al usuario en bbdd

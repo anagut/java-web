@@ -18,23 +18,25 @@
 	<input type="text" placeholder="Nombre" name="nombre" id="nombre" value="${newusuario.name}" required/>
 	</div>
 	<div>
-	<input type="email" placeholder="email" name="email" id="email" value="${newusuario.email}"/>
+	<input type="email" placeholder="email" name="email" id="email" value="${newusuario.email}" required/>
 	</div>
 	<div>
-	<input type="password" placeholder="password" name="password" id="password" required/>
+	<input type="password" placeholder="password" name="password" id="password"/>
 	</div>
 	<div>
-	<input type="password" placeholder="confirmación de password" name="passwordconf" id="passwordconf" required/>
+	<input type="password" placeholder="confirmación de password" name="passwordconf" id="passwordconf"/>
 	</div>
 		<div>
 		<label for="habitacion">Habitación:</label>
-		<select name="habitacion" id="habitacion">
+		<select name="habitacion" id="habitacion" value="${newusuario.habitacion.hid}" required>
 <!-- 		Aquí irán las habitaciones -->
 			<option selected disabled>Elegir habitación</option>
 		<c:forEach var="unaHabitacion" items="${lasHabitaciones}">  
 			<option value="${unaHabitacion.hid}">${unaHabitacion.calle}, ${unaHabitacion.num} (${unaHabitacion.ciudad})</option>
    		</c:forEach>
 		</select>
+		<div><button id="habBtn">Crear nueva habitación</button></div>
+<!-- 			<div><a href="./nuevahabitacion">Crear nueva habitación</a></div> -->
 	</div>
 	
 	<div><button>Aceptar</button></div>
@@ -42,4 +44,6 @@
 	
 	
 </body>
+
+<script src="./js/script2.js"></script>
 </html>

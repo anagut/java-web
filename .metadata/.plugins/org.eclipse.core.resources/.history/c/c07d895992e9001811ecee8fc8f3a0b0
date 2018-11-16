@@ -1,0 +1,67 @@
+package com.ana.models;
+
+public class Habitacion {
+	private int hid;
+	private String calle;
+	private int num;
+	private String ciudad;
+	
+	
+	public Habitacion(int hid, String calle, int num, String ciudad) {
+		super();
+		this.hid = hid;
+		this.calle = calle;
+		this.num = num;
+		this.ciudad = ciudad;
+	}
+
+
+	public int getHid() {
+		return hid;
+	}
+
+
+	public void setHid(int hid) {
+		this.hid = hid;
+	}
+
+
+	public String getCalle() {
+		return calle;
+	}
+
+
+	public void setCalle(String calle) {
+		this.calle = calle;
+	}
+
+
+	public int getNum() {
+		return num;
+	}
+
+
+	public void setNum(int num) {
+		this.num = num;
+	}
+
+
+	public String getCiudad() {
+		return ciudad;
+	}
+
+
+	public void setCiudad(String ciudad) {
+		this.ciudad = ciudad;
+	}
+	
+	public boolean esValido() {
+		boolean valido = true;
+		if (this.calle==null || this.calle.equals("")) valido = false;
+		if (this.num < 0 || this.num.matches("(.*)?[0-9](.*)?"))) valido = false;
+		if (this.ciudad==null || this.ciudad.equals("")) valido = false;
+		return valido;
+	}
+	
+
+}
